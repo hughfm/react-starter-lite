@@ -1,0 +1,25 @@
+{
+  "name": "react-starter-lite",
+  "version": "1.0.0",
+  "description": "Minimal React starter project.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d build --copy-files",
+    "build:watch": "babel src -d build --watch --copy-files",
+    "develop": "concurrently \"npm run build:watch\" \"serve build\"",
+    "clean": "rm -rf build",
+    "deploy": "now",
+    "deploy:prod": "now --prod"
+  },
+  "author": "hughfmiddleton@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "concurrently": "^4.1.2",
+    "eslint": "^6.5.0",
+    "eslint-plugin-react": "^7.14.3",
+    "serve": "^11.2.0"
+  }
+}
