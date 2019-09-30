@@ -17,6 +17,6 @@ In essence, this is just an HTML file with [React](https://reactjs.org/) include
 
 When you write your JavaScript in `src/`, it will be processed by [Babel](https://babeljs.io/) and output into `build/`, where it will be served from.
 
-_All_ Babel does is transpile [JSX](https://reactjs.org/docs/introducing-jsx.html) into plain Javascript. There's **no** transpiling to earlier ES versions, and **no** module bundling, so your browser needs to support ES6 and modules.
+All Babel does here is transpile [JSX](https://reactjs.org/docs/introducing-jsx.html) into plain Javascript. There's **no** transpiling to earlier ES versions, and **no** module bundling, so your browser needs to support ES6 and modules.
 
 My base config for [ESLint](https://eslint.org/) and deployment on [Now](https://zeit.co/) are thrown in for good measure.
